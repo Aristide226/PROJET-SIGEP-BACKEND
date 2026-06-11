@@ -1,0 +1,151 @@
+2026-06-09 09:19:53.148  INFO 17120 --- [main] com.sigep.SigepApplication               : Starting SigepApplication using Java 17.0.12 on LAPTOP-S0HR1QU8 with PID 17120 (C:\Users\ASUS\PROJET SIGEP\backend\sigep\target\classes started by ASUS in C:\Users\ASUS\PROJET SIGEP\backend\sigep)
+2026-06-09 09:19:53.162  INFO 17120 --- [main] com.sigep.SigepApplication               : The following 1 profile is active: "dev"
+2026-06-09 09:19:59.664  INFO 17120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-09 09:19:59.667  INFO 17120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-06-09 09:20:00.095  INFO 17120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-09 09:20:02.647  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-09 09:20:03.137  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-09 09:20:03.605  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.621  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.730  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.736  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.761  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.765  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.773  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.821  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.826  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.864  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.904  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.940  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.957  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.972  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.993  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:03.999  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:04.056  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:04.093  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:04.146  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:04.155  WARN 17120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:20:04.252  WARN 17120 --- [main] org.hibernate.id.GUIDGenerator           : HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2026-06-09 09:20:09.766  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-09 09:20:09.798  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-09 09:20:11.366  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-09 09:20:12.280  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-09 09:20:13.457  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-09 09:20:14.017  INFO 17120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-09 09:20:25.714  WARN 17120 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-09 09:20:27.112  INFO 17120 --- [main] com.sigep.SigepApplication               : Started SigepApplication in 34.648 seconds (JVM running for 35.241)
+2026-06-09 09:22:49.324  INFO 13292 --- [main] com.sigep.SigepApplication               : Starting SigepApplication using Java 17.0.12 on LAPTOP-S0HR1QU8 with PID 13292 (C:\Users\ASUS\PROJET SIGEP\backend\sigep\target\classes started by ASUS in C:\Users\ASUS\PROJET SIGEP\backend\sigep)
+2026-06-09 09:22:49.327  INFO 13292 --- [main] com.sigep.SigepApplication               : The following 1 profile is active: "dev"
+2026-06-09 09:22:59.588  INFO 13292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-09 09:22:59.590  INFO 13292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-06-09 09:22:59.924  INFO 13292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-09 09:23:04.455  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-09 09:23:05.491  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-09 09:23:06.555  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:06.587  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.172  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.188  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.204  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.204  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.219  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.251  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.267  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.305  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.348  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.396  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.412  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.428  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.476  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.494  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.573  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.600  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.720  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.736  WARN 13292 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 09:23:07.928  WARN 13292 --- [main] org.hibernate.id.GUIDGenerator           : HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2026-06-09 09:23:14.678  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-09 09:23:14.702  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-09 09:23:16.183  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-09 09:23:16.841  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-09 09:23:17.821  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-09 09:23:18.420  INFO 13292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-09 09:23:28.384  WARN 13292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-09 09:23:31.660  INFO 13292 --- [main] com.sigep.SigepApplication               : Started SigepApplication in 42.925 seconds (JVM running for 43.733)
+2026-06-09 09:23:59.257  INFO 13292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-09 13:04:57.566  INFO 16560 --- [main] com.sigep.SigepApplication               : Starting SigepApplication using Java 17.0.12 on LAPTOP-S0HR1QU8 with PID 16560 (C:\Users\ASUS\PROJET SIGEP\backend\sigep\target\classes started by ASUS in C:\Users\ASUS\PROJET SIGEP\backend\sigep)
+2026-06-09 13:04:57.570  INFO 16560 --- [main] com.sigep.SigepApplication               : The following 1 profile is active: "dev"
+2026-06-09 13:05:04.170  INFO 16560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-09 13:05:04.172  INFO 16560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-06-09 13:05:04.523  INFO 16560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-09 13:05:06.919  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-09 13:05:08.668  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-09 13:05:09.042  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.056  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.147  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.151  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.171  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.176  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.185  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.235  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.238  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.271  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.323  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.355  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.373  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.388  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.408  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.412  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.473  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.498  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.564  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.572  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:09.693  WARN 16560 --- [main] org.hibernate.id.GUIDGenerator           : HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2026-06-09 13:05:12.356  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-09 13:05:12.374  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-09 13:05:12.426  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:12.442  WARN 16560 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 13:05:13.404  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-09 13:05:14.115  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-09 13:05:14.933  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-09 13:05:15.941  INFO 16560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-09 13:05:21.088  WARN 16560 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-09 13:05:22.134  INFO 16560 --- [main] com.sigep.SigepApplication               : Started SigepApplication in 25.139 seconds (JVM running for 25.675)
+2026-06-09 13:05:30.393  INFO 16560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-09 15:22:16.318  INFO 21136 --- [main] com.sigep.SigepApplication               : Starting SigepApplication using Java 17.0.12 on LAPTOP-S0HR1QU8 with PID 21136 (C:\Users\ASUS\PROJET SIGEP\backend\sigep\target\classes started by ASUS in C:\Users\ASUS\PROJET SIGEP\backend\sigep)
+2026-06-09 15:22:16.323  INFO 21136 --- [main] com.sigep.SigepApplication               : The following 1 profile is active: "dev"
+2026-06-09 15:22:22.628  INFO 21136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-09 15:22:22.629  INFO 21136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-06-09 15:22:22.853  INFO 21136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-09 15:22:24.805  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-09 15:22:25.410  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-09 15:22:25.726  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.738  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.805  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.811  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.832  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.835  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.840  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.878  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.880  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.900  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.927  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.941  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.950  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.957  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.966  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.969  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:25.996  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:26.009  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:26.040  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:26.046  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:26.135  WARN 21136 --- [main] org.hibernate.id.GUIDGenerator           : HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2026-06-09 15:22:29.170  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-09 15:22:29.191  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-09 15:22:29.251  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:29.269  WARN 21136 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-09 15:22:30.267  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-09 15:22:30.771  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-09 15:22:31.440  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-09 15:22:31.959  INFO 21136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-09 15:22:36.888  WARN 21136 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-09 15:22:37.692  INFO 21136 --- [main] com.sigep.SigepApplication               : Started SigepApplication in 21.946 seconds (JVM running for 22.455)
+2026-06-09 15:23:15.148  INFO 21136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'

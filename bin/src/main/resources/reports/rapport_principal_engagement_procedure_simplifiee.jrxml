@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rapport_principal_engagement_procedure_simplifiee" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2c9e9d1b-3009-4101-a2b3-2944d56d808c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BDSQL02"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="Dataset1" uuid="013dd021-8008-4c62-aba3-599382ee4b5b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="GESTION" class="java.lang.Integer"/>
+	<parameter name="IDBUDGET" class="java.lang.Integer"/>
+	<parameter name="BENUM" class="java.lang.Integer"/>
+	<parameter name="SUBREPORT_ENGAGEMENT_PROCEDURE_SIMPLIFIEE" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SUBREPORT_LIQUIDATION_PROCEDURE_SIMPLIFIEE" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SUBREPORT_ORDONNANCE_PAIEMENT_PROCEDURE_SIMPLIFIEE" class="net.sf.jasperreports.engine.JasperReport"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT 1 AS idx
+UNION ALL SELECT 2
+UNION ALL SELECT 3
+]]>
+	</queryString>
+	<field name="idx" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idx"/>
+		<property name="com.jaspersoft.studio.field.label" value="idx"/>
+	</field>
+	<detail>
+		<band height="62" splitType="Stretch">
+			<break>
+				<reportElement x="0" y="0" width="595" height="1" uuid="4e662135-0cbe-43d1-b3ae-d312249d3438">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[$F{idx} > 1]]></printWhenExpression>
+				</reportElement>
+			</break>
+			<subreport>
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="1" width="595" height="20" uuid="4e487e7d-5c61-49c9-8e33-63168c09ee66">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<printWhenExpression><![CDATA[$F{idx} == 1]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="GESTION">
+					<subreportParameterExpression><![CDATA[$P{GESTION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IDBUDGET">
+					<subreportParameterExpression><![CDATA[$P{IDBUDGET}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="BENUM">
+					<subreportParameterExpression><![CDATA[$P{BENUM}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_ENGAGEMENT_PROCEDURE_SIMPLIFIEE}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="21" width="595" height="20" uuid="c4c7bbaa-b8e7-4028-9468-427fb70ffa89">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[$F{idx} == 2]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="GESTION">
+					<subreportParameterExpression><![CDATA[$P{GESTION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IDBUDGET">
+					<subreportParameterExpression><![CDATA[$P{IDBUDGET}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="BENUM">
+					<subreportParameterExpression><![CDATA[$P{BENUM}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_LIQUIDATION_PROCEDURE_SIMPLIFIEE}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="42" width="595" height="20" uuid="7868515d-b909-4620-b9bc-e74b9b6a8af0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[$F{idx} == 3]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="GESTION">
+					<subreportParameterExpression><![CDATA[$P{GESTION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IDBUDGET">
+					<subreportParameterExpression><![CDATA[$P{IDBUDGET}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="BENUM">
+					<subreportParameterExpression><![CDATA[$P{BENUM}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_ORDONNANCE_PAIEMENT_PROCEDURE_SIMPLIFIEE}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

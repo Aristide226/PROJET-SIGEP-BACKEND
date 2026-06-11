@@ -1,0 +1,73 @@
+package com.sigep.gbc.view.dto;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class ContratsPourCreationEngagementViewDto {
+	private Long idContrat;
+	private String cod1;
+	private String cod2;
+	private String cod3;
+	private String cod4;
+	private String cod5;
+	private Short annee;
+	private Integer numero;
+	private String objet;
+	private String reference;
+	private Long delaiNbre;
+	private String delaiText;
+	private Date dateSaisie;
+	private Date dateApprob;
+	private String acteRef;
+	private String refNotif;
+	private Date dateNotif;
+	private Date dateDemmar;
+	private Boolean mleAuto;
+	private String refPassation;
+	private String refArt;
+	private BigDecimal tauxappli;
+	private Boolean suspens;
+	private String idLogin;
+	private String idcompte;
+	private Long avenant;
+	private Long degage;
+	private Long engage;
+	private Long mandate;
+	private Long paie;
+	private Long engageValid;
+	private Long mandateValid;
+	private Long montantMaxHtva;
+	private Long montantMinHtva;
+	private Long montantMaxTtc;
+	private Long montantMinTtc;
+	private Boolean avecTva;
+	private Boolean avecMiniMax;
+	private Long montant;
+	private BigInteger montantCorrige;
+	private Integer delaiAn;
+	private Integer delaiMois;
+	private Integer delaiSemaine;
+	private Integer delaiJours;
+	private Integer delaiEnJours;
+	private Date dateCreate;
+	private String userUpdate;
+	private String idContratParent;
+	private String abrevEpe;
+	private Date dateAttribution;
+	private Integer idBudget;
+	private String type;
+	private Long idFourn;
+	private String idDac;
+	private String ifumle;
+	private String ftype;
+	private String contactTel;
+	private String contactEmail;
+	private String nom;
+	private String libelle;
+	private Long resteAEngager;
+	private long resteALiquider;
+}
