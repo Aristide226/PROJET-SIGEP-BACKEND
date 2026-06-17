@@ -23,8 +23,7 @@ public interface GimCodeBudgTypeRepository extends JpaRepository<CodeBudgType, I
 		        COALESCE(SUM(CASE WHEN e.etatB = 'Passable' THEN 1 ELSE 0 END),0),
 		        COALESCE(SUM(CASE WHEN e.etatB = 'Délabré' THEN 1 ELSE 0 END),0),
 		        COALESCE(SUM(CASE WHEN e.etatB = 'Mauvais' THEN 1 ELSE 0 END),0),
-		        COALESCE(SUM(CASE WHEN e.etatB = 'En panne' THEN 1 ELSE 0 END),0),
-		        COUNT(p)
+		        COALESCE(SUM(CASE WHEN e.etatB IN ('Bon', 'Passable', 'Délabré', 'Mauvais') THEN 1 ELSE 0 END), 0)
 		    )
 		    FROM CodeBudgType c
 		    LEFT JOIN Patrimoine p

@@ -16,16 +16,15 @@ public interface GimCodeBudgetaireRepository extends JpaRepository<CodeBudgetair
 		    SELECT new com.sigep.gim.dto.CodeBudgetaireStatistiqueDto(
 		        c.codBud,
 		        c.intituleCodBud,
-		        COALESCE(SUM(CASE WHEN e.etatB = 'Bon' THEN 1 ELSE 0 END),0),
-		        COALESCE(SUM(CASE WHEN e.etatB = 'Passable' THEN 1 ELSE 0 END),0),
-		        COALESCE(SUM(CASE WHEN e.etatB = 'Délabré' THEN 1 ELSE 0 END),0),
-		        COALESCE(SUM(CASE WHEN e.etatB = 'Mauvais' THEN 1 ELSE 0 END),0),
-		        COALESCE(SUM(CASE WHEN e.etatB = 'En panne' THEN 1 ELSE 0 END),0),
+		        COALESCE(SUM(CASE WHEN e.etatB = 'Bon' THEN 1 ELSE 0 END), 0),
+		        COALESCE(SUM(CASE WHEN e.etatB = 'Passable' THEN 1 ELSE 0 END), 0),
+		        COALESCE(SUM(CASE WHEN e.etatB = 'Délabré' THEN 1 ELSE 0 END), 0),
+		        COALESCE(SUM(CASE WHEN e.etatB = 'Mauvais' THEN 1 ELSE 0 END), 0),
 		        COUNT(p)
 		    )
 		    FROM CodeBudgetaire c
-		    LEFT JOIN Patrimoine p
-		        ON p.categorieBien.codCategorie = c.codeBudgType.codTyp
+		    LEFT JOIN CodeMateriel cm ON cm.codeBudgetaire.codBud = c.codBud
+		    LEFT JOIN Patrimoine p ON p.codeMateriel.codMat = cm.codMat
 		    LEFT JOIN p.etatBien e
 		    GROUP BY c.codBud, c.intituleCodBud
 		    ORDER BY c.codBud

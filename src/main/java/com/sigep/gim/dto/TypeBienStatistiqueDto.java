@@ -13,7 +13,6 @@ public class TypeBienStatistiqueDto {
     private Long passable;
     private Long delabre;
     private Long mauvais;
-    private Long enPanne;
 
     private Long nombreTotal;
 }
