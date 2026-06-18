@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="statut-de-bien" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d742291-9e22-4442-9650-ae5d8a217c9f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="gim"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT  dbo.PatrimoineStatut.*
+FROM      dbo.PatrimoineStatut]]>
+	</queryString>
+	<field name="StatPatri" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="StatPatri"/>
+		<property name="com.jaspersoft.studio.field.label" value="StatPatri"/>
+	</field>
+	<field name="LibelStatPatri" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="LibelStatPatri"/>
+		<property name="com.jaspersoft.studio.field.label" value="LibelStatPatri"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="53" width="100" height="30" uuid="a21fe72b-c252-41d8-90d2-2ba5e6d16574"/>
+				<text><![CDATA[hello]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,11 +1,20 @@
 package com.sigep.gim.service;
 
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
+import javax.sql.DataSource;
 import javax.transaction.Transactional;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.sigep.gim.dto.requestDto.PatrimoineStatutRequestDto;
@@ -14,6 +23,12 @@ import com.sigep.gim.entity.PatrimoineStatut;
 import com.sigep.gim.repository.GimPatrimoineStatutRepository;
 
 import lombok.RequiredArgsConstructor;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
 
 @Service
 @RequiredArgsConstructor
@@ -21,6 +36,10 @@ public class GimPatrimoineStatutServiceImpl implements GimPatrimoineStatutServic
 	
 	private final GimPatrimoineStatutRepository repository;
 	private final ModelMapper modelMapper;
+	
+	@Autowired
+    @Qualifier("gimDataSource")
+    private DataSource dataSource;
 	
 	@Override
 	@Transactional
@@ -68,5 +87,39 @@ public class GimPatrimoineStatutServiceImpl implements GimPatrimoineStatutServic
 		PatrimoineStatut entity = get(id);
 		entity.setLibelStatPatri(patrimoineStatutRequestDto.getLibelStatPatri());
 		return modelMapper.map(entity, PatrimoineStatutResponseDto.class);
+	}
+	 
+	@Override
+	public byte[] statutBienReport() throws JRException, FileNotFoundException {
+	    final String mainReportResource = "gim/StatutDeBien.jrxml";
+
+	    try (
+	        InputStream mainReportStream = getClass().getClassLoader()
+	                .getResourceAsStream(mainReportResource)
+	    ) {
+	        if (mainReportStream == null) {
+	            throw new FileNotFoundException(
+	                "Ressource JRXML introuvable : " + mainReportResource
+	            );
+	        }
+
+	        JasperReport mainReport = JasperCompileManager.compileReport(mainReportStream);
+
+	        Map<String, Object> parameters = new HashMap<>();
+
+	        try (Connection connection = dataSource.getConnection()) {
+	            JasperPrint jasperPrint = JasperFillManager.fillReport(
+	                    mainReport, parameters, connection
+	            );
+	            return JasperExportManager.exportReportToPdf(jasperPrint);
+	        }
+
+	    } catch (SQLException e) {
+	        throw new JRException("Erreur de connexion à la base de données : " + e.getMessage(), e);
+	    } catch (JRException e) {
+	        throw e;
+	    } catch (Exception e) {
+	        throw new JRException("Erreur lors de la génération du rapport : " + e.getMessage(), e);
+	    }
 	}
 }
