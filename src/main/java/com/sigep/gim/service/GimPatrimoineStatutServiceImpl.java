@@ -91,19 +91,19 @@ public class GimPatrimoineStatutServiceImpl implements GimPatrimoineStatutServic
 	 
 	@Override
 	public byte[] statutBienReport() throws JRException, FileNotFoundException {
-	    final String mainReportResource = "gim/StatutDeBien.jrxml";
+	    final String cheminDuRapport = "gim/StatutDeBien.jrxml";
 
 	    try (
-	        InputStream mainReportStream = getClass().getClassLoader()
-	                .getResourceAsStream(mainReportResource)
+	        InputStream inputStream = getClass().getClassLoader()
+	                .getResourceAsStream(cheminDuRapport)
 	    ) {
-	        if (mainReportStream == null) {
+	        if (inputStream == null) {
 	            throw new FileNotFoundException(
-	                "Ressource JRXML introuvable : " + mainReportResource
+	                "Ressource JRXML introuvable : " + cheminDuRapport
 	            );
 	        }
 
-	        JasperReport mainReport = JasperCompileManager.compileReport(mainReportStream);
+	        JasperReport mainReport = JasperCompileManager.compileReport(inputStream);
 
 	        Map<String, Object> parameters = new HashMap<>();
 

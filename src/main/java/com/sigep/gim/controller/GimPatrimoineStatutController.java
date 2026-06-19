@@ -71,7 +71,7 @@ public class GimPatrimoineStatutController {
 
 	        HttpHeaders headers = new HttpHeaders();
 	        headers.setContentType(MediaType.APPLICATION_PDF);
-	        headers.setContentDispositionFormData("inline", "StatutDeBien.pdf");
+	        headers.setContentDispositionFormData("inline", "PatrimoinStatu.pdf");
 	        headers.setContentLength(reportData.length);
 
 	        return ResponseEntity.ok().headers(headers).body(reportData);
