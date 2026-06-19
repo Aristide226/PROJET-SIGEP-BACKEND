@@ -1,10 +1,13 @@
 package com.sigep.gim.service;
+import java.io.FileNotFoundException;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.sigep.gim.dto.requestDto.EtatFicheRequestDto;
 import com.sigep.gim.dto.responseDto.EtatFicheResponseDto;
 import com.sigep.gim.entity.EtatFiche;
+
+import net.sf.jasperreports.engine.JRException;
 
 @Service
 public interface GimEtatFicheService {
@@ -14,4 +17,5 @@ public interface GimEtatFicheService {
 	public EtatFicheResponseDto getById(String id);
 	public EtatFicheResponseDto delete(String id);
 	public EtatFicheResponseDto edit(String id, EtatFicheRequestDto etatFicheRequestDto);
+	public byte[] etatFicheReport() throws JRException, FileNotFoundException;
 }

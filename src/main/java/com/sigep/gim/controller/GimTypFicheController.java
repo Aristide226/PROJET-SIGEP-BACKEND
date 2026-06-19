@@ -1,8 +1,11 @@
 package com.sigep.gim.controller;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,6 +22,7 @@ import com.sigep.gim.dto.responseDto.TypFicheResponseDto;
 import com.sigep.gim.service.GimTypFicheService;
 
 import lombok.RequiredArgsConstructor;
+import net.sf.jasperreports.engine.JRException;
 
 @RestController
 @RequestMapping("/gim/typFiche")
@@ -56,5 +60,25 @@ public class GimTypFicheController {
 	public ResponseEntity<TypFicheResponseDto> edit(@PathVariable final String id, @RequestBody final TypFicheRequestDto typFicheRequestDto) {
 		TypFicheResponseDto responseDto = service.edit(id, typFicheRequestDto);
 		return new ResponseEntity<>(responseDto, HttpStatus.OK);
+	}
+	
+	@GetMapping("/typFicheReport")
+	public ResponseEntity<byte[]> typFicheReport() {
+		try {
+	        byte[] reportData = service.typFicheReport();
+
+	        HttpHeaders headers = new HttpHeaders();
+	        headers.setContentType(MediaType.APPLICATION_PDF);
+	        headers.setContentDispositionFormData("inline", "Fiche.pdf");
+	        headers.setContentLength(reportData.length);
+
+	        return ResponseEntity.ok().headers(headers).body(reportData);
+
+	    } catch (FileNotFoundException e) {
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+
+	    } catch (JRException e) {
+	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+	    }
 	}
 }

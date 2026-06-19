@@ -1,8 +1,11 @@
 package com.sigep.gim.controller;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,6 +22,7 @@ import com.sigep.gim.dto.responseDto.CategorieBienResponseDto;
 import com.sigep.gim.service.GimCategorieBienService;
 
 import lombok.RequiredArgsConstructor;
+import net.sf.jasperreports.engine.JRException;
 
 @RestController
 @RequestMapping("/gim/categorieBien")
@@ -56,5 +60,25 @@ public class GimCategorieBienController {
 	public ResponseEntity<CategorieBienResponseDto> edit(@PathVariable final int id, @RequestBody final CategorieBienRequestDto categorieBienRequestDto) {
 		CategorieBienResponseDto responseDto = service.edit(id, categorieBienRequestDto);
 		return new ResponseEntity<>(responseDto, HttpStatus.OK);
+	}
+	
+	@GetMapping("/categorieBienReport")
+	public ResponseEntity<byte[]> categorieBienReport() {
+		try {
+	        byte[] reportData = service.categorieBienReport();
+
+	        HttpHeaders headers = new HttpHeaders();
+	        headers.setContentType(MediaType.APPLICATION_PDF);
+	        headers.setContentDispositionFormData("inline", "CatBien.pdf");
+	        headers.setContentLength(reportData.length);
+
+	        return ResponseEntity.ok().headers(headers).body(reportData);
+
+	    } catch (FileNotFoundException e) {
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+
+	    } catch (JRException e) {
+	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+	    }
 	}
 }
