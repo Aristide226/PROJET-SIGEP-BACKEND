@@ -285,3 +285,4 @@ java.lang.IllegalArgumentException: FournisseurType with id could not be found
 2026-06-22 17:36:17.971  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
 2026-06-22 17:36:22.932  WARN 16588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-06-22 17:36:23.360  INFO 16588 --- [main] com.sigep.SigepApplication               : Started SigepApplication in 21.391 seconds (JVM running for 21.916)
+2026-06-22 17:36:44.266  INFO 16588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'

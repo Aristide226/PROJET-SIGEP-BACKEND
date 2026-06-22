@@ -66,6 +66,7 @@ public class GimMagasinEntrepotServiceImpl implements GimMagasinEntrepotService 
 	public MagasinEntrepotResponseDto edit(int id,MagasinEntrepotRequestDto magasinEntrepotRequestDto) {
 		MagasinEntrepot entity = get(id);
 		entity.setLibelleMagasin(magasinEntrepotRequestDto.getLibelleMagasin());
+		repository.save(entity);
 		return modelMapper.map(entity, MagasinEntrepotResponseDto.class);
 	}
 }
