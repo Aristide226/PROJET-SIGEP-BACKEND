@@ -1,0 +1,42 @@
+2026-06-20 09:53:39.144  INFO 21244 --- [main] com.sigep.SigepApplication               : Starting SigepApplication using Java 17.0.12 on LAPTOP-S0HR1QU8 with PID 21244 (C:\Users\ASUS\PROJET SIGEP\backend\sigep\target\classes started by ASUS in C:\Users\ASUS\PROJET SIGEP\backend\sigep)
+2026-06-20 09:53:39.151  INFO 21244 --- [main] com.sigep.SigepApplication               : The following 1 profile is active: "dev"
+2026-06-20 09:53:53.707  INFO 21244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20 09:53:53.709  INFO 21244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-06-20 09:53:54.128  INFO 21244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-20 09:53:58.997  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20 09:54:01.061  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20 09:54:01.995  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.027  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.342  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.355  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.384  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.388  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.394  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.521  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.527  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.594  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.646  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.694  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.729  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.761  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.820  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.820  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.967  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:02.981  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:03.075  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:03.096  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:03.265  WARN 21244 --- [main] org.hibernate.id.GUIDGenerator           : HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2026-06-20 09:54:09.796  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-20 09:54:09.828  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-20 09:54:09.892  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:09.924  WARN 21244 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2026-06-20 09:54:12.681  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-20 09:54:13.715  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-20 09:54:15.466  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-20 09:54:16.030  INFO 21244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-20 09:54:28.365  WARN 21244 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20 09:54:29.933  INFO 21244 --- [main] com.sigep.SigepApplication               : Started SigepApplication in 51.584 seconds (JVM running for 52.531)
+2026-06-20 09:58:45.465  INFO 21244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20 11:09:13.541  WARN 21244 --- [mssql-timeout-task-1-ace39090-2240-4736-abef-c570f6160bf6] c.m.s.jdbc.internals.TDS.Command         : TDSCommand@13251c4c (SQLServerStatement:119 executeXXX): Command could not be timed out. Reason: Socket closed
+2026-06-20 11:09:14.335  WARN 21244 --- [http-nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Failed to validate connection ConnectionID:90 ClientConnectionId: ace39090-2240-4736-abef-c570f6160bf6 (La connexion est fermée.). Possibly consider using a shorter maxLifetime value.
+2026-06-20 11:09:14.335  WARN 21244 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Failed to validate connection ConnectionID:88 ClientConnectionId: ca5c4d92-ff06-4a56-81d3-1594f90d6bb0 (La connexion est fermée.). Possibly consider using a shorter maxLifetime value.

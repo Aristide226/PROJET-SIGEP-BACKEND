@@ -88,7 +88,7 @@ public class GimFournisseursServiceImpl implements GimFournisseursService {
 			FournisseurType fournisseurType = gimFournisseurTypeService.get(fournisseursRequestDto.getTypF());
 			entity.setFournisseurType(fournisseurType);
 		}
-		
+		repository.save(entity);
 		return GimMapper.FournisseursToFournisseursResponseDto(entity);
 	}
 	
