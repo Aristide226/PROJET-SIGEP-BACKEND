@@ -26,7 +26,7 @@ public class GimEtatBienServiceImpl implements GimEtatBienService {
 	@Transactional
 	public EtatBienResponseDto add(EtatBienRequestDto etatBienRequestDto) {
 		EtatBien entity = new EtatBien();
-		
+		entity.setEtatB(etatBienRequestDto.getEtatB());
 		repository.save(entity);
 		return modelMapper.map(entity, EtatBienResponseDto.class);
 	}
