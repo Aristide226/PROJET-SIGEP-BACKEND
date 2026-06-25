@@ -70,6 +70,7 @@ public class GimSourceFinancementServiceImpl implements GimSourceFinancementServ
 		SourceFinancement entity = get(id);
 		entity.setLibSourceFin(sourceFinancementRequestDto.getLibSourceFin());
 		entity.setAbrevSourceFin(sourceFinancementRequestDto.getAbrevSourceFin());
+		repository.save(entity);
 		return modelMapper.map(entity, SourceFinancementResponseDto.class);
 	}
 	

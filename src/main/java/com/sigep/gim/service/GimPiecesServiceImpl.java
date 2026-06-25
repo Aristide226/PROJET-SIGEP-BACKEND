@@ -66,6 +66,7 @@ public class GimPiecesServiceImpl implements GimPiecesService {
 	public PiecesResponseDto edit(long id,PiecesRequestDto piecesRequestDto) {
 		Pieces entity = get(id);
 		entity.setNaturePiece(piecesRequestDto.getNaturePiece());
+		repository.save(entity);
 		return modelMapper.map(entity, PiecesResponseDto.class);
 	}
 }

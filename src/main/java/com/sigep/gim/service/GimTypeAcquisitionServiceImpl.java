@@ -68,6 +68,7 @@ public class GimTypeAcquisitionServiceImpl implements GimTypeAcquisitionService 
 		TypeAcquisition entity = get(id);
 		entity.setLibTypeAcq(typeAcquisitionRequestDto.getLibTypeAcq());
 		entity.setExigerEngagement(typeAcquisitionRequestDto.isExigerEngagement());
+		repository.save(entity);
 		return modelMapper.map(entity, TypeAcquisitionResponseDto.class);
 	}
 }
